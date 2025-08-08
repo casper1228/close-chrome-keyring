@@ -1,6 +1,6 @@
 #!/bin/bash
 
-AUTOSTART="$HOME/.config/autostart/google-chrome.desktop"
+AUTOSTART="$HOME/.config/autostart/Chrome.desktop"
 
 if [ -f "$AUTOSTART" ]; then
   sed -i 's|Exec=.*|Exec=/usr/bin/google-chrome-stable --password-store=basic|' "$AUTOSTART"
